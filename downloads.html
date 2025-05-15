@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Downloads | VARTIST</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 5vw;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      font-family: 'Chelsea Market', cursive;
+      font-size: 1.8rem;
+      color: #222;
+      text-decoration: none;
+    }
+
+    .main-nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .main-nav a.active {
+      color: #ec8640;
+      font-weight: bold;
+    }
+
+    .user-icon .circle {
+      width: 32px;
+      height: 32px;
+      background: #ec8640;
+      border-radius: 50%;
+    }
+
+    .downloads-hero {
+      width: 100%;
+      min-height: 220px;
+      max-height: 330px;
+      overflow: hidden;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      background: #faf9f8;
+      border-bottom: 2px solid #e7e7e7;
+    }
+
+    .downloads-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .downloads-section {
+      background: #fff;
+      padding: 48px 0 25px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .downloads-title {
+      text-align: center;
+      font-family: 'Chelsea Market', cursive;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 13px;
+      color: #232323;
+    }
+
+    .downloads-hr {
+      width: 44px;
+      border: none;
+      border-bottom: 3px solid #ef8532;
+      margin: 0 auto 13px auto;
+    }
+
+    .downloads-description {
+      color: #353535;
+      text-align: center;
+      font-size: 1.13rem;
+      max-width: 600px;
+      margin: 0 auto 38px auto;
+    }
+
+    .downloads-table {
+      width: 98vw;
+      max-width: 920px;
+      margin: 0 auto 50px auto;
+      background: #fff;
+      border-radius: 13px;
+      box-shadow: 0 8px 34px rgba(50,34,29,0.04);
+      border: 1px solid #e9e9e9;
+      overflow-x: auto;
+      padding: 26px 27px 24px 27px;
+    }
+
+    .downloads-thead {
+      font-family: 'Chelsea Market', cursive;
+      font-size: 1.09rem;
+      color: #ec8640;
+      border-bottom: 2px solid #faf9f8;
+      padding-bottom: 7px;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .downloads-thead div {
+      flex: 1;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .downloads-row {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      border-bottom: 1px solid #eeecea;
+      padding: 12px 0;
+    }
+
+    .downloads-row:last-child {
+      border-bottom: none;
+    }
+
+    .downloads-cell {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      font-size: 1.04rem;
+    }
+
+    .downloads-cell .icon {
+      width: 27px;
+      height: 27px;
+      margin-right: 17px;
+    }
+
+    .downloads-cell .folder-icon {
+      width: 23px;
+      height: 23px;
+      margin-right: 13px;
+    }
+
+    .downloads-meta {
+      font-size: 0.94rem;
+      color: #868686;
+      white-space: nowrap;
+      margin-left: 4px;
+      text-align: center;
+      min-width: 64px;
+    }
+
+    .downloads-author .author-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 6px;
+    }
+
+    footer {
+      background: #222;
+      color: #eee;
+      padding: 25px 5vw;
+      text-align: center;
+    }
+
+    .footer-tagline {
+      display: block;
+      font-size: 0.9rem;
+      margin-top: 5px;
+      color: #f5c7aa;
+    }
+
+    @media (max-width: 768px) {
+      .header-wrapper,
+      .downloads-table,
+      .downloads-row,
+      .downloads-thead {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .downloads-cell {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-wrapper">
+      <a href="index.html" class="logo">VARTIST</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="downloads.html">Downloads</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="user-icon">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="downloads-hero">
+    <img src="https://ext.same-assets.com/3857495002/1452328164.jpeg" alt="Art Supplies Banner" />
+  </section>
+
+  <section class="downloads-section">
+    <div class="downloads-title">DOWNLOADS</div>
+    <hr class="downloads-hr" />
+    <div class="downloads-description">
+      Use this area to upload files you wish to share with your users. You can manage who has access to your files and what they can do, such as view &amp; download, upload items and more.
+    </div>
+
+    <div class="downloads-table">
+      <div class="downloads-thead">
+        <div>Item name</div>
+        <div class="downloads-meta">Last updated</div>
+        <div class="downloads-meta">Views</div>
+        <div class="downloads-meta">Favorites</div>
+        <div class="downloads-meta">Contributors</div>
+      </div>
+
+      <div class="downloads-row">
+        <div class="downloads-cell">
+          <img class="folder-icon" src="https://ext.same-assets.com/3857495002/3374999646.svg" alt="Folder" />
+          Graphic Design
+        </div>
+        <div class="downloads-meta">May 10</div>
+        <div class="downloads-meta">421</div>
+        <div class="downloads-meta">67</div>
+        <div class="downloads-meta">4</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-wrapper">
+      <span>VARTIST Inc.</span>
+      <span class="footer-tagline">EVERYTHING YOU DRAW HAS MEANING</span>
+    </div>
+  </footer>
+
+</body>
+</html>

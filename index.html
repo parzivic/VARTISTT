@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VARTIST 1</title>
+  <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    .hero-rect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 60px 40px;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.hero-title {
+  font-family: 'Chelsea Market', cursive;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.hero-rect .scroll-arrow {
+  margin-top: 20px;
+}
+
+
+    .arrow {
+      font-size: 24px;
+      color: black;
+      text-decoration: none;
+    }
+
+    .scroll-arrow:hover .arrow {
+      color: gray;
+      cursor: pointer;
+    }
+
+    .hero {
+      position: relative;
+    }
+
+    .hero-bg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="logo">VARTIST</div>
+      <nav class="main-nav">
+        <a class="active" href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="user-icon">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img class="hero-bg" src="https://ext.same-assets.com/1954594351/2929583827.jpeg" alt="Hero Abstract Background" />
+   <div class="hero-rect">
+  <div class="hero-title">
+    <span>VARTI</span><br />
+    <span>ST</span><br />
+    <span>INC.</span>
+  </div>
+  <a href="#next-section" class="scroll-arrow">
+    <span class="arrow">&#8595;</span>
+  </a>
+</div>
+  </section>
+<section class="services-section" id="services">
+  <h2 class="services-title">SERVICES</h2>
+  <div class="services-box">
+    <div class="service-card">
+      <div class="letter">D</div>
+      <h4>Digital Art</h4>
+      <p>We offer captivating digital art that showcases modern expression. Our range includes intricate illustrations and 3D sculptures, elevating your projects and transforming spaces.</p>
+    </div>
+    <div class="service-card">
+      <div class="letter">G</div>
+      <h4>Graphic Design</h4>
+      <p>Discover our stunning graphic design services that embody contemporary creativity. Our portfolio features eye-catching visuals and innovative layouts, perfect for enhancing your brand and captivating your audience.</p>
+    </div>
+    <div class="service-card">
+      <div class="letter">G</div>
+      <h4>Graffiti</h4>
+      <p>Explore our vibrant graffiti art that energizes any space. Each piece showcases bold modern creativity, featuring stunning colors that captivate. Transform your projects with our unique collection.</p>
+    </div>
+    <div class="service-card">
+      <div class="letter">S</div>
+      <h4>Sketch</h4>
+      <p>Discover captivating digital sketches that embody modern expression. Our features include intricate illustrations, perfect for enhancing your projects and transforming your spaces.</p>
+    </div>
+  </div>
+  <div class="see-courses">
+    <a href="services.html">See All Courses &gt;&gt;</a>
+  </div>
+</section>
+
+
+
+  <section class="featured-artworks">
+    <h2>FEATURED ARTWORKS</h2>
+    <div class="artworks-row">
+      <div class="art-item">
+        <img src="https://ext.same-assets.com/1954594351/457067745.jpeg" alt="Artwork 1" />
+      </div>
+      <div class="art-item">
+        <img src="https://ext.same-assets.com/1954594351/1473466252.jpeg" alt="Artwork 2" />
+      </div>
+      <div class="art-item">
+        <img src="https://ext.same-assets.com/1954594351/1215831793.jpeg" alt="Artwork 3" />
+      </div>
+    </div>
+    <button class="load-more">Load more</button>
+  </section>
+
+  <section class="next-courses">
+    <h3>Next Courses</h3>
+    <div class="courses-row">
+      <div class="course-block">
+        <div class="course-date">14 <span>March</span></div>
+        <p>Join us on March 14 for a digital art course! Enhance your skills and explore your creativity. Sign up now and connect with fellow artists!</p>
+        <a href="services.html" class="read-more">Read More &gt;&gt;</a>
+      </div>
+      <div class="course-block">
+        <div class="course-date">26 <span>March</span></div>
+        <p>Join us on March 26 for a fun sketch course! Perfect for skill levels, this session will help you improve your techniques and spark your creativity. Sign up today!</p>
+        <a href="services.html" class="read-more">Read More &gt;&gt;</a>
+      </div>
+      <div class="course-block">
+        <div class="course-date">09 <span>April</span></div>
+        <p>Join us for a graffiti course on April 9! Learn the basics and unleash your creativity in this fun and vibrant art form. Sign up now to reserve your spot!</p>
+        <a href="services.html" class="read-more">Read More &gt;&gt;</a>
+      </div>
+      <div class="course-block">
+        <div class="course-date">15 <span>April</span></div>
+        <p>Join us on April 15 for a digital art course! Perfect for all skill levels, this course will inspire your creativity and help you master digital art techniques. Sign up now!</p>
+        <a href="services.html" class="read-more">Read More &gt;&gt;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="identity">
+    <h2>IDENTITY</h2>
+    <h3>CONQUER YOUR OWN STYLE</h3>
+    <a href="about.html" class="identity-more">Read More &gt;&gt;</a>
+  </section>
+
+  
+  <footer>
+    <div class="footer-wrapper">
+      <span>VARTIST Inc.</span>
+      <span class="footer-tagline">EVERYTHING YOU DRAW HAS MEANING</span>
+    </div>
+  </footer>
+</body>
+</html>

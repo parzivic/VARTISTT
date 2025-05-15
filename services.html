@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | VARTIST</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 5vw;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      font-family: 'Chelsea Market', cursive;
+      font-size: 1.8rem;
+      color: #222;
+      text-decoration: none;
+    }
+
+    .main-nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .main-nav a.active {
+      color: #ec8640;
+      font-weight: bold;
+    }
+
+    .user-icon .circle {
+      width: 32px;
+      height: 32px;
+      background: #ec8640;
+      border-radius: 50%;
+    }
+
+    .services-hero img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+    }
+
+    .services-section {
+      background-image: url('https://ext.same-assets.com/984161844/2433855918.jpeg');
+      background-repeat: repeat;
+      background-size: 1100px auto;
+      padding: 58px 0 30px;
+    }
+
+    .services-title {
+      text-align: center;
+      font-family: 'Chelsea Market', cursive;
+      font-size: 1.4rem;
+      letter-spacing: 0.08em;
+      color: #3b3f3e;
+      font-weight: 700;
+      margin-bottom: 35px;
+    }
+
+    .course-list {
+      max-width: 950px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .course-card {
+      display: flex;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 7px 35px rgba(48,40,60,0.11);
+      border: 1px solid #ececec;
+      overflow: hidden;
+    }
+
+    .course-img {
+      flex: 0 0 310px;
+      background: #eee;
+    }
+
+    .course-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .course-info {
+      flex: 1;
+      padding: 48px 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .course-info h3 {
+      font-family: 'Chelsea Market', cursive;
+      font-size: 1.35rem;
+      color: #232323;
+      margin-bottom: 8px;
+    }
+
+    .course-info .weeks,
+    .course-info .price {
+      font-size: 1.02rem;
+      color: #767676;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .course-info .price {
+      margin-top: 6px;
+      margin-bottom: 16px;
+      color: #b65443;
+      font-weight: 600;
+    }
+
+    .details-btn {
+      background: #ef8532;
+      color: #fff;
+      text-decoration: none;
+      padding: 9px 28px;
+      border-radius: 4px;
+      font-size: 1.03rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      transition: background 0.2s;
+      width: fit-content;
+    }
+
+    .details-btn:hover {
+      background: #bf3d43;
+    }
+
+    footer {
+      background: #222;
+      color: #eee;
+      padding: 25px 5vw;
+      text-align: center;
+    }
+
+    .footer-tagline {
+      display: block;
+      font-size: 0.9rem;
+      margin-top: 5px;
+      color: #f5c7aa;
+    }
+
+    @media (max-width: 820px) {
+      .course-card {
+        flex-direction: column;
+      }
+      .course-img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-wrapper">
+      <a href="index.html" class="logo">VARTIST</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="services.html">Services</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="user-icon"><div class="circle"></div></div>
+    </div>
+  </header>
+
+  <section class="services-hero">
+    <img src="https://ext.same-assets.com/984161844/1451038962.jpeg" alt="Mural Wall">
+  </section>
+
+  <section class="services-section">
+    <div class="services-title">SERVICES</div>
+    <div class="course-list">
+      <div class="course-card">
+  <div class="course-img">
+    <img src="https://cdn.shopify.com/s/files/1/0632/4840/0639/files/The_Art_of_Sketching_copy_8-03.jpg?v=1713704382" alt="Sketch" />
+  </div>
+  <div class="course-info">
+    <h3>Sketch</h3>
+    <div class="weeks">4 Weeks</div>
+    <div class="price">₱3,000.00</div>
+    <a class="details-btn" href="#">View Details</a>
+  </div>
+</div>
+
+<div class="course-card">
+  <div class="course-img">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e8446365474129.5af54c3336683.jpg" alt="Digital Art" />
+  </div>
+  <div class="course-info">
+    <h3>Digital Art</h3>
+    <div class="weeks">4 Weeks</div>
+    <div class="price">₱4,500.00</div>
+    <a class="details-btn" href="#">View Details</a>
+  </div>
+</div>
+
+<div class="course-card">
+  <div class="course-img">
+    <img src="https://maacchandigarh.com/wp-content/uploads/2024/03/Graphic_designi_new.png" alt="Graphic Design" />
+  </div>
+  <div class="course-info">
+    <h3>Graphic Design</h3>
+    <div class="weeks">4 Weeks</div>
+    <div class="price">₱6,000.00</div>
+    <a class="details-btn" href="#">View Details</a>
+  </div>
+</div>
+
+<div class="course-card">
+  <div class="course-img">
+    <img src="https://www.wallpaperphotomurals.com//Files/2/64000/64941/ProductPhotos/620/1918568031.jpg" alt="Graffiti" />
+  </div>
+  <div class="course-info">
+    <h3>Graffiti</h3>
+    <div class="weeks">4 Weeks</div>
+    <div class="price">₱1,500.00</div>
+    <a class="details-btn" href="#">View Details</a>
+  </div>
+</div>
+
+  </section>
+
+  <footer>
+    <div class="footer-wrapper">
+      <span>VARTIST Inc.</span>
+      <span class="footer-tagline">EVERYTHING YOU DRAW HAS MEANING</span>
+    </div>
+  </footer>
+
+</body>
+</html>

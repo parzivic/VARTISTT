@@ -1,0 +1,461 @@
+/* Font imports from Google Fonts are in the HTML <head> */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Futura', 'Chelsea Market', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.top-bar {
+  background: #f8f8f8;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+  padding: 6px 0 2px 0;
+}
+.top-bar a {
+  color: #b262c3;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+header {
+  background: #fff;
+  border-bottom: 2px solid #ebebeb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 32px 12px 32px;
+}
+.logo {
+  font-family: 'Futura', 'Chelsea Market', Arial, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  color: #253134;
+}
+nav.main-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+nav.main-nav a {
+  color: #222;
+  font-size: 1rem;
+  font-family: 'Chelsea Market', 'Futura', Arial, sans-serif;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s;
+}
+nav.main-nav a.active,
+nav.main-nav a:hover {
+  border-bottom: 2px solid #79353e;
+  color: #79353e;
+}
+.user-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+}
+.user-icon .circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ff7d46;
+  display: inline-block;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 54vw;
+  max-height: 650px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+}
+img.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.hero-rect {
+  position: relative;
+  z-index: 2;
+  width: 220px;
+  height: 250px;
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 8px 40px rgba(48,40,60,0.07);
+}
+.hero-rect .arrow {
+  font-size: 2.5rem;
+  color: #253134;
+  margin-bottom: 28px;
+}
+
+.transition-section {
+  width: 100%;
+  background: #e3e3e3;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.transition-section img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+}
+
+.featured-artworks {
+  background: #fff;
+  padding: 32px 0 30px 0;
+  text-align: center;
+}
+.featured-artworks h2 {
+  font-family: 'Chelsea Market', 'Futura', Arial, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  letter-spacing: 0.07em;
+  color: #253134;
+}
+.artworks-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.art-item {
+  width: 240px;
+  height: 260px;
+  overflow: hidden;
+  background: #c3a76c12;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(48,40,60,0.07);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.art-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.load-more {
+  font-family: inherit;
+  background: #fff;
+  color: #79353e;
+  border: 1.5px solid #79353e;
+  padding: 8px 22px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  transition: background .15s, color .15s;
+}
+.load-more:hover {
+  background: #79353e;
+  color: #fff;
+}
+
+.next-courses {
+  background: linear-gradient(93deg, #fceecc 0%, #c3f4ec 38%, #e7b4d8 100%);
+  padding: 45px 0 38px 0;
+  text-align: center;
+}
+.next-courses h3 {
+  color: #79353e;
+  font-size: 1.2rem;
+  font-family: 'Chelsea Market', 'Futura', Arial, sans-serif;
+  letter-spacing: 0.09em;
+  margin-bottom: 36px;
+}
+.courses-row {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  flex-wrap: wrap;
+}
+.course-block {
+  background: rgba(255,255,255,0.81);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(48,40,60,0.10);
+  width: 250px;
+  padding: 24px 17px 26px 17px;
+  margin: 7px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.course-date {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #253134;
+  margin-bottom: 7px;
+  font-family: 'Futura', Arial, sans-serif;
+}
+.course-date span {
+  display: block;
+  font-size: 1.1rem;
+  font-family: 'Chelsea Market', 'Futura', Arial, sans-serif;
+  color: #79353e;
+  margin-top: -2px;
+}
+.course-block p {
+  font-size: 1rem;
+  color: #253134;
+  margin: 13px 0 17px 0;
+  min-height: 75px;
+}
+.read-more {
+  font-family: inherit;
+  background: none;
+  color: #253134;
+  border: 1.3px solid #253134;
+  padding: 7px 17px;
+  font-size: 0.97rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background .13s, color .13s;
+}
+.read-more:hover {
+  background: #253134;
+  color: #fff;
+}
+
+.identity {
+  background: #303030;
+  color: #fff;
+  text-align: center;
+  padding: 44px 0 42px 0;
+}
+.identity h2 {
+  font-family: 'Chelsea Market', 'Futura', Arial, sans-serif;
+  font-size: 2.3rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.1em;
+}
+.identity h3 {
+  font-family: 'Chelsea Market', 'Futura', Arial, sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  letter-spacing: 0.06em;
+}
+.identity-more {
+  display: inline-block;
+  font-size: 1rem;
+  color: #fff;
+  background: #79353e;
+  border-radius: 3px;
+  padding: 10px 26px;
+  text-decoration: none;
+  letter-spacing: 0.07em;
+  border: none;
+  margin-top: 16px;
+  box-shadow: 0 4px 14px rgba(50,20,30,0.08);
+}
+.identity-more:hover {
+  background: #bf9529;
+  color: #2d2d2d;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > *:not(footer) {
+  flex-shrink: 0;
+}
+
+footer {
+  margin-top: auto;
+  background: #e9e98c;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 1rem;
+  color: #232323;
+}
+
+
+footer {
+  background: #242424;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+.footer-wrapper span {
+  display: block;
+}
+.footer-wrapper span:first-child {
+  font-family: 'Chelsea Market', 'Futura', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 5px;
+  letter-spacing: 0.02em;
+}
+.footer-tagline {
+  font-size: 0.98rem;
+  color: #dad7d1;
+  font-style: italic;
+}
+
+/* Responsive tweaks */
+@media (max-width: 970px) {
+  .header-wrapper {
+    flex-direction: column;
+    padding: 18px 10px 10px 10px;
+  }
+  .main-nav {
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .artworks-row, .courses-row {
+    gap: 15px;
+  }
+  .art-item, .course-block {
+    width: 42vw;
+    max-width: 350px;
+  }
+}
+@media (max-width: 650px) {
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .artworks-row, .courses-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .art-item, .course-block {
+    width: 92vw;
+    max-width: 99vw;
+  }
+  .header-wrapper {
+    padding: 10px 7px 7px 7px;
+  }
+  .hero-rect { width: 82vw; min-width: 160px; height: 120px; }
+}
+.site-footer {
+  background-color: #2e2e2e;
+  color: #fff;
+  text-align: center;
+  padding: 28px 0;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  margin-top: auto;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.footer-tagline {
+  font-size: 0.95rem;
+  margin-top: 5px;
+  color: #f0f0f0;
+  font-style: italic;
+}
+.services-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: transparent;
+  position: relative;
+}
+
+.services-title {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.services-box {
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  width: 220px;
+  margin: 20px;
+  text-align: center;
+}
+
+.service-card .letter {
+  font-size: 48px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.service-card h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.see-courses a {
+  display: inline-block;
+  margin-top: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #000;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.see-courses a:hover {
+  background: #000;
+  color: #fff;
+}

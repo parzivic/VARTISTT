@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | VARTIST</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+
+    .top-bar {
+      background: #f7f7f7;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .top-bar a {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 5vw;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo a {
+      font-family: 'Chelsea Market', cursive;
+      font-size: 1.8rem;
+      color: #222;
+      text-decoration: none;
+    }
+
+    .main-nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .main-nav a.active {
+      color: #ec8640;
+      font-weight: bold;
+    }
+
+    .user-icon .circle {
+      width: 32px;
+      height: 32px;
+      background: #ec8640;
+      border-radius: 50%;
+    }
+
+    .about-hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 5vw;
+      background: #fff;
+    }
+
+    .about-hero-image {
+      flex: 1 1 300px;
+      max-width: 500px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #f5c7aa;
+    }
+
+    .about-hero-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .about-hero-content {
+      flex: 2 1 360px;
+      padding: 10px;
+    }
+
+    .about-hero-content h2 {
+      font-family: 'Chelsea Market', cursive;
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+    }
+
+    .about-hero-content p {
+      margin-bottom: 18px;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    .about-gallery-section {
+      background: #e0e0e0;
+      padding: 50px 5vw;
+    }
+
+    .about-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-gallery img {
+      flex: 1 1 320px;
+      width: 100%;
+      border-radius: 6px;
+      object-fit: cover;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .about-gallery-info {
+      flex: 1 1 300px;
+      background: #fff;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+      font-size: 1.1rem;
+    }
+
+    .about-testimonials-section {
+      background: #2c2c2c;
+      color: #fff;
+      padding: 60px 5vw;
+      text-align: center;
+    }
+
+    .quotes-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .quote-block {
+      max-width: 300px;
+    }
+
+    .quote-mark {
+      font-size: 2.5rem;
+      color: #ec8640;
+      margin-bottom: -10px;
+    }
+
+    .quote-block strong {
+      display: block;
+      margin-top: 12px;
+      font-size: 1.05rem;
+      color: #ccc;
+    }
+
+    .quote-block q {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #f5c7aa;
+    }
+
+    .about-partners-section {
+      background: #fff;
+      padding: 50px 5vw;
+      text-align: center;
+    }
+
+    .about-partners-title {
+      font-family: 'Chelsea Market', cursive;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .about-partners-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .about-partners-logos img {
+      width: 100px;
+      opacity: 0.8;
+      filter: grayscale(1);
+      transition: opacity 0.2s ease;
+    }
+
+    .about-partners-logos img:hover {
+      opacity: 1;
+    }
+
+    footer {
+      background: #222;
+      color: #eee;
+      padding: 25px 5vw;
+      text-align: center;
+    }
+
+    .footer-tagline {
+      display: block;
+      font-size: 0.9rem;
+      margin-top: 5px;
+      color: #f5c7aa;
+    }
+
+    @media (max-width: 768px) {
+      .about-hero,
+      .about-gallery,
+      .quotes-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-gallery img,
+      .about-gallery-info {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-wrapper">
+      <div class="logo"><a href="index.html">VARTIST</a></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="user-icon">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="about-hero">
+    <div class="about-hero-image">
+      <img src="https://ext.same-assets.com/2755751396/2330040344.jpeg" alt="Painting Wall" />
+    </div>
+    <div class="about-hero-content">
+      <h2>Get to Know Us</h2>
+      <p>Vartist is a highly skilled and passionate digital artist, specializing in a wide range of visual styles including digital painting, sketching, graphic design, and graffiti. With years of experience and a bold, creative edge, Vartist brings both inspiration and expertise to the art community. Whether you're looking to sharpen your skills or dive into art for the first time, Vartist offers the perfect blend of creativity and technique. Each piece of work reflects a unique perspective and a dedication to visual storytelling.</p>
+
+      <p>Our courses are designed for artists at every stage—from complete beginners to seasoned professionals. You'll find in-depth lessons on digital art fundamentals, advanced techniques in design, and expressive graffiti styles. Every course is structured to help you grow at your own pace, with clear guidance and real-world tips. No matter your skill level, we’ll help you unlock your full creative potential.</p>
+
+      <p>Learning with Vartist means joining a supportive and passionate community of fellow creators. We believe that art is for everyone, and our goal is to make it accessible, fun, and meaningful. Through engaging tutorials, hands-on projects, and personalized feedback, you'll see your skills evolve with every session. Let Vartist guide your artistic journey and help you turn your ideas into powerful visual art.</p>
+    </div>
+  </section>
+
+  <section class="about-gallery-section">
+    <div class="about-gallery">
+      <img src="https://ext.same-assets.com/2755751396/1022748235.jpeg" alt="Art Gallery" />
+      <div class="about-gallery-info">VARTIST is committed to empowering working artists with knowledge, opportunity, and support.</div>
+    </div>
+  </section>
+
+  <section class="about-testimonials-section">
+    <div class="quotes-row">
+      <div class="quote-block">
+        <span class="quote-mark">“</span>
+        <q>This is the best art website I’ve ever used—affordable and packed with value!</q>
+        <strong>Alexa Young, CA</strong>
+      </div>
+      <div class="quote-block">
+        <span class="quote-mark">“</span>
+        <q>If you're serious about improving your art, I highly recommend VARTIST.</q>
+        <strong>Morgan James, NY</strong>
+      </div>
+      <div class="quote-block">
+        <span class="quote-mark">“</span>
+        <q>The instructors are amazing—so kind and incredibly talented!</q>
+        <strong>Jade Dalaguiado, PH</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-partners-section">
+    <div class="about-partners-title">Working With the Best Clients and Partners</div>
+    <div class="about-partners-logos">
+      <img src="https://ext.same-assets.com/2755751396/1163383502.png" alt="Latch" />
+      <img src="https://ext.same-assets.com/2755751396/4070515642.png" alt="Horizon" />
+      <img src="https://ext.same-assets.com/2755751396/3996501430.png" alt="Collective" />
+      <img src="https://ext.same-assets.com/2755751396/1438966970.png" alt="PJK" />
+      <img src="https://ext.same-assets.com/2755751396/4030665504.png" alt="Pan Tiles" />
+      <img src="https://ext.same-assets.com/2755751396/1479320829.png" alt="Owerr" />
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-wrapper">
+      <span>VARTIST Inc.</span>
+      <span class="footer-tagline">EVERYTHING YOU DRAW HAS MEANING</span>
+    </div>
+  </footer>
+</body>
+</html>
